@@ -1,0 +1,230 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #4caf50;
+}
+
+.titulo {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  font-size: 30px; /* Cambia el tamaño según lo necesites */
+  color: #fdfdfd; /* Cambia el color si lo deseas */
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+header {
+  display: flex;
+  min-height: 70px;
+  background-color: #8b4513;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+  margin-right: 15px;
+  border-radius: 20px;
+}
+
+nav a {
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+nav a:hover {
+  color: #b40b0b;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+}
+nav {
+  padding: 10px 0px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #ffffff; /* Verde selva */
+  background-color: #ffc107; /* Amarillo sol */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #4caf50; /* Amarillo un poco más oscuro al pasar el ratón */
+}
+
+.footer {
+  background-color: #8b4513; /* Marrón tierra */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-links {
+  list-style-type: none; /* Sin viñetas */
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline; /* Mostrar los elementos en línea */
+  margin: 0 15px; /* Espaciado entre los enlaces */
+}
+
+.footer-links a {
+  color: #fbfaf6; /* Amarillo sol */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.footer-links a:hover {
+  text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+.social-media {
+  margin-top: 10px; /* Espaciado arriba */
+}
+
+.social-media a {
+  color: #ffc107; /* Amarillo sol */
+  margin: 0 10px; /* Espaciado entre iconos */
+  font-size: 20px; /* Tamaño de los iconos */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.social-media a:hover {
+  color: white; /* Cambiar color al pasar el ratón */
+}
+
+h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff; /* Color del texto */
+  text-shadow: 2px 2px 0px #b40b0b,
+    /* Sombra negra alrededor */ -2px -2px 0px#b40b0b, 2px -2px 0px #b40b0b,
+    -2px 2px 0px #b40b0b;
+}
+
+h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff; /* Color del texto */
+  text-shadow: 2px 2px 0px #b40b0b,
+    /* Sombra negra alrededor */ -2px -2px 0px#b40b0b, 2px -2px 0px #b40b0b,
+    -2px 2px 0px #b40b0b;
+}
+
+h3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff; /* Color del texto */
+  text-shadow: 2px 2px 0px #b40b0b,
+    /* Sombra negra alrededor */ -2px -2px 0px#b40b0b, 2px -2px 0px #b40b0b,
+    -2px 2px 0px #b40b0b;
+}
+
+h4 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff; /* Color del texto */
+  text-shadow: 2px 2px 0px #b40b0b,
+    /* Sombra negra alrededor */ -2px -2px 0px#b40b0b, 2px -2px 0px #b40b0b,
+    -2px 2px 0px #b40b0b;
+}
+p {
+  color: #e0e0e0; /* Gris claro */
+  font-size: 20px; /* Tamaño de letra */
+  line-height: 1.6; /* Espaciado entre líneas */
+  margin: 15px 0; /* Margen para separar párrafos */
+  padding: 25px; /* Espaciado interno */
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo blanco translúcido */
+  border-left: 2px solid #ffc107; /* Borde a la izquierda */
+  border-radius: 3px; /* Bordes redondeados */
+  box-shadow: 0 1px 43px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+p:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Cambio de fondo */
+  transform: scale(1.02); /* Ligeramente más grande */
+  transition: background-color 0.3s, transform 0.3s; /* Transición suave */
+}
+
+/* Contenedor del formulario */
+.styled-form {
+  background-color: #4caf50; /* Fondo blanco semitransparente (90% opaco) */
+  padding: 20px; /* Espacio interno del formulario */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 4px 15px #E0E0E0(0, 0, 0, 0.2); /* Sombra alrededor del formulario para dar profundidad */
+  width: 340px; /* Ancho fijo del formulario */
+  text-align: center; /* Centra el texto dentro del formulario */
+}
+
+/* Título del formulario */
+.styled-form h2 {
+  margin-bottom: 20px; /* Espacio inferior entre el título y los campos */
+  color: #e0e0e0; /* Color del título */
+  font-size: 1.8em; /* Tamaño de la fuente más grande */
+  text-align: center;
+}
+
+/* Estilo de las etiquetas (nombre, apellidos, teléfono) */
+.styled-form label {
+  display: block; /* Hace que la etiqueta ocupe toda la línea */
+  font-weight: bold; /* Hace el texto de la etiqueta más grueso */
+  margin-bottom: 8px; /* Espacio debajo de cada etiqueta */
+  text-align: left; /* Alinea las etiquetas a la izquierda */
+  color: #e0e0e0; /* Cambia el color del texto de la etiqueta a gris oscuro */
+}
+
+/* Estilo de los campos de entrada (inputs) */
+.styled-form input {
+  width: 100%; /* Los inputs ocupan todo el ancho disponible dentro del formulario */
+  padding: 10px; /* Relleno interno para que el texto no esté pegado a los bordes del input */
+  margin-bottom: 20px; /* Espacio inferior entre los inputs */
+  border: 2px solid #ffc107; /* Bordes de 2px de grosor y color rojo (#ff5e62) */
+  border-radius: 8px; /* Bordes redondeados para los inputs */
+  box-sizing: border-box; /* Asegura que el padding y los bordes no afecten el tamaño total del input */
+  font-size: 16px; /* Tamaño de fuente dentro de los inputs */
+}
+
+/* Efecto cuando el usuario hace clic en un campo de entrada (focus) */
+.styled-form input:focus {
+  border-color: #ffc107; /* Cambia el color del borde al hacer clic (a naranja) */
+  outline: none; /* Quita el borde azul predeterminado al hacer clic */
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* Agrega un resplandor naranja suave alrededor del input */
+}
+
+/* Estilo del botón de enviar */
+.styled-form button {
+  background-color: #ffc107; /* Color de fondo del botón */
+  border: none; /* Quita el borde predeterminado del botón */
+  color: #ffffff; /* Color del texto del botón */
+  padding: 12px 20px; /* Relleno interno del botón (más relleno horizontal que vertical) */
+  text-align: center; /* Centra el texto dentro del botón */
+  font-size: 16px; /* Tamaño de la fuente dentro del botón */
+  border-radius: 8px; /* Bordes redondeados del botón */
+  cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave cuando cambia el color de fondo del botón */
+}
+
+/* Efecto al pasar el ratón sobre el botón (hover) */
+.styled-form button:hover {
+  background-color: #b40b0b; /* Cambia el color del botón a naranja cuando se pasa el ratón sobre él */
+}
